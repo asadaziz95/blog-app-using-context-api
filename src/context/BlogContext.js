@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-coonst BlogContext = React.createContext();
+const BlogContext = React.createContext();
 
-export const BlogProvider = ({children})=>{
-
-}
+export const BlogProvider = ({children}) => {
+  return <BlogContext.Provider>{children}</BlogContext.Provider>;
+};
