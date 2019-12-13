@@ -10,13 +10,18 @@ const navigator = createStackNavigator(
   },
   {
     initialRouteName: 'Index',
-    defaultNavgationOptions: {
-      title: 'blogs',
+    defaultNavigationOptions: {
+      title: 'Blogs',
+      headerStyle: {
+        backgroundColor: '#f4511e',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
     },
   },
 );
-
-//export default createAppContainer(navigator);
 
 const App = createAppContainer(navigator);
 
