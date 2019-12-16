@@ -2,7 +2,7 @@ import React from 'react';
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 import IndexScreen from './../screens/IndexScreen.js';
-import {BlogProvider} from './../context/BlogContext';
+import {Provider} from './../context/BlogContext';
 
 const navigator = createStackNavigator(
   {
@@ -27,8 +27,8 @@ const App = createAppContainer(navigator);
 
 export default () => {
   return (
-    <BlogProvider>
+    <Provider>
       <App />
-    </BlogProvider>
+    </Provider>
   );
 };
